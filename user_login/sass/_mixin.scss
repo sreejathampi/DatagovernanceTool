@@ -1,0 +1,32 @@
+@mixin mobile-min{
+	@media only screen and (max-width: $mobile +'px'){
+		@content;
+	}
+}
+
+@mixin below-mobile{
+	@media only screen and (max-width: $under-tab +'px'){
+		@content;
+	}
+}
+
+@mixin menu-resp{
+	@media only screen and (min-width: $menu-one-l +'px') and (max-width: $menu-one-h +'px'){
+		@content;
+	}
+}
+@mixin menu-resp2{
+	@media only screen and (min-width: $menu-one-1 +'px') and (max-width: $menu-one-2 +'px'){
+		@content;
+	}
+}
+@mixin menu-resp3{
+	@media only screen and (min-width: $menu-one-3 +'px') and (max-width: $menu-one-4 +'px'){
+		@content;
+	}
+}
+@mixin menu-resp4{
+	@media only screen and (min-width: $menu-one-5 +'px') and (max-width: $menu-one-6 +'px'){
+		@content;
+	}
+}
